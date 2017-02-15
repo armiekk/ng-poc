@@ -1,0 +1,23 @@
+<header>
+  <h1>CDG System Limited</h1>
+</header>
+<div class="ui-g">
+  <div class="ui-g-12">
+    <p-menubar [model]="menuItem"></p-menubar>
+    <p-breadcrumb [model]="breadCrumb"></p-breadcrumb>
+  </div>
+</div>
+<div class="ui-g">
+  <div class="ui-g-12">
+    <div class="ui-widget-content">
+      <div class="ui-g">
+        <div class="ui-g-12">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-left">CDG System Limited</div>
+</footer>

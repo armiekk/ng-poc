@@ -1,0 +1,12 @@
+<div class="ui-g">
+  <div class="ui-g-12">
+    <p-dataTable [value]="data" [rows]="10" selectionMode="single" [paginator]="true" paginatorPosition="top" [pageLinks]="3" [rowsPerPageOptions]="[5,10,20]"
+      (onRowSelect)="selectRow($event)">
+      <p-header>ผลการค้นหา</p-header>
+      <p-column field="id" header="รหัสหนังสือ"></p-column>
+      <p-column field="nameThai" header="ชื่อภาษาไทย"></p-column>
+      <p-column field="nameEng" header="ชื่อภาษาอังกฤษ"></p-column>
+      <p-column field="author" header="ชื่อผู้แต่ง"></p-column>
+    </p-dataTable>
+  </div>
+</div>

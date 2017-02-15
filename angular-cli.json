@@ -18,7 +18,10 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "assets/primeng/themes/omega/theme.css",
+        "assets/primeng/primeng.min.css",
+        "assets/font-awesome/css/font-awesome.min.css"
       ],
       "scripts": [],
       "environments": {

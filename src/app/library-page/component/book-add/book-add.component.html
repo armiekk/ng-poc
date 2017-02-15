@@ -1,0 +1,107 @@
+<div class="ui-g">
+  <div class="ui-g-6">
+    <div style="text-align: left">
+      <h2>เพิ่มหนังสือ</h2>
+    </div>
+  </div>
+  <div class="ui-g-6">
+    <div style="text-align: right">
+      <button type="button" pButton label="ค้นหาหนังสือ" icon="fa-search" routerLink="/library/book/search"></button>
+    </div>
+  </div>
+</div>
+<div class="ui-g">
+  <div class="ui-g-2"></div>
+  <div class="ui-g-8">
+    <p-panel header="เพิ่ม/แก้ไขหนังสือ">
+      <div class="ui-g">
+        <div class="ui-g-4">
+          ชื่อหนังสือภาษาไทย:
+        </div>
+        <div class="ui-g-8">
+          <input type="text" pInputText [(ngModel)]="bookAddModel.nameThai" style="width: 100%">
+        </div>
+      </div>
+      <div class="ui-g">
+        <div class="ui-g-4">
+          ประเภทหนังสือ:
+        </div>
+        <div class="ui-g-8">
+          <input type="text" pInputText [(ngModel)]="bookAddModel.type" style="width: 100%">
+        </div>
+      </div>
+      <div class="ui-g">
+        <div class="ui-g-4">
+          ชื่อหนังสือภาษาอังกฤษ:
+        </div>
+        <div class="ui-g-8">
+          <input type="text" pInputText [(ngModel)]="bookAddModel.nameEng" style="width: 100%">
+        </div>
+      </div>
+      <div class="ui-g">
+        <div class="ui-g-4">
+          สถานที่พิมพ์:
+        </div>
+        <div class="ui-g-8">
+          <input type="text" pInputText [(ngModel)]="bookAddModel.press" style="width: 70%">
+        </div>
+      </div>
+      <div class="ui-g">
+        <div class="ui-g-4">
+          ISBN:
+        </div>
+        <div class="ui-g-8">
+          <input type="text" pInputText [(ngModel)]="bookAddModel.isbn" style="width: 70%">
+        </div>
+      </div>
+      <div class="ui-g">
+        <div class="ui-g-4">
+          ชื่อผู้ผลิต:
+        </div>
+        <div class="ui-g-8">
+          <input type="text" pInputText [(ngModel)]="bookAddModel.publisher" style="width: 60%">
+        </div>
+      </div>
+      <div class="ui-g">
+        <div class="ui-g-4">
+          ชื่อผู้แต่ง:
+        </div>
+        <div class="ui-g-8">
+          <input type="text" pInputText [(ngModel)]="bookAddModel.author" style="width: 60%">
+        </div>
+      </div>
+      <div class="ui-g">
+        <div class="ui-g-4">
+          เล่มที่:
+        </div>
+        <div class="ui-g-8">
+          <input type="text" pInputText [(ngModel)]="bookAddModel.issue" style="width: 10%">
+        </div>
+      </div>
+      <div class="ui-g">
+        <div class="ui-g-4">
+          พิมพ์ครั้งที่:
+        </div>
+        <div class="ui-g-8">
+          <input type="text" pInputText [(ngModel)]="bookAddModel.printNumber" style="width: 10%">
+        </div>
+      </div>
+      <div class="ui-g">
+        <div class="ui-g-4">
+          ปีที่พิมพ์:
+        </div>
+        <div class="ui-g-8">
+          <input type="text" pInputText [(ngModel)]="bookAddModel.year" style="width: 10%">
+        </div>
+      </div>
+      <div class="ui-g">
+        <div class="ui-g-12">
+          <button type="button" pButton label="เพิ่ม" icon="fa-plus" (click)="add(bookAddModel)" [disabled]="bookAddModel.id !== null && bookAddModel.id !== undefined"></button>
+          <button type="button" pButton label="แก้ไข" icon="fa-edit" (click)="edit(bookAddModel)" *ngIf="bookAddModel.id !== null && bookAddModel.id !== undefined"></button>
+          <button type="button" pButton label="ยกเลิก" icon="fa-ban"></button>
+        </div>
+      </div>
+    </p-panel>
+  </div>
+  <div class="ui-g-2"></div>
+</div>

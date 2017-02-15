@@ -1,0 +1,14 @@
+<div class="ui-g">
+    <div class="ui-g-6">
+        <div style="text-align: left">
+            <h2>ค้นหาหนังสือ</h2>
+        </div>
+    </div>
+    <div class="ui-g-6">
+        <div style="text-align: right">
+            <button type="button" pButton label="เพิ่มหนังสือ" icon="fa-plus" routerLink="/library/book/add"></button>
+        </div>
+    </div>
+</div>
+<app-search-condition></app-search-condition>
+<app-search-data-table [data]="bookData"></app-search-data-table>
